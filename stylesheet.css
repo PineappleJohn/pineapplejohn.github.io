@@ -190,7 +190,7 @@ h1 {
 }
 
 .page #hero-spot img {
-    margin-bottom: 25px
+    margin-bottom: 15px
 }
 
 #hero-spot h2 {
@@ -782,3 +782,58 @@ footer .right {
     margin-left: auto;
     margin-right: auto
 }
+
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    text-align: center;
+    align-content: center;
+  }
+
+  .button-container {
+    justify-content: center;
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add spacing between elements */
+  }
+
+  .button-container p {
+    margin: 0; /* Remove default margin from the text */
+  }
+
+  .button-container button {
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    border: none; /* Remove borders */
+    background-color: #222; /* Default button background color */
+    transition: background-color 0.35s ease-in-out 0s;
+  }
+
+  .button-container button:disabled {
+    background-color: #555;
+  }
+
+  .button-container button:hover {
+    background-color: #677; /* Change background color on hover */
+    transition: background-color 0.35s ease-in-out 0s;
+  }
